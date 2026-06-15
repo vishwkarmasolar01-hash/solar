@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Solar Panel Icon -->
+  <g transform="translate(10, 15)">
+    <!-- Panel frame -->
+    <rect x="0" y="15" width="50" height="70" rx="4" fill="url(#panelGrad)" stroke="#0D47A1" stroke-width="2"/>
+    <rect x="0" y="15" width="50" height="70" rx="4" fill="none" stroke="#42A5F5" stroke-width="1" opacity="0.5"/>
+
+    <!-- Grid lines - horizontal -->
+    <line x1="4" y1="30" x2="46" y2="30" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+    <line x1="4" y1="45" x2="46" y2="45" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+    <line x1="4" y1="60" x2="46" y2="60" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+    <line x1="4" y1="75" x2="46" y2="75" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+
+    <!-- Grid lines - vertical -->
+    <line x1="20" y1="19" x2="20" y2="81" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+    <line x1="36" y1="19" x2="36" y2="81" stroke="#64B5F6" stroke-width="1" opacity="0.7"/>
+
+    <!-- Shine effect -->
+    <rect x="4" y="19" width="14" height="9" fill="white" opacity="0.12" rx="1"/>
+
+    <!-- Sun above panel -->
+    <g transform="translate(25, 5)">
+      <!-- Rays -->
+      <g opacity="0.9">
+        <line x1="0" y1="-14" x2="0" y2="-18" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="10" y1="-10" x2="13" y2="-13" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="-10" y1="-10" x2="-13" y2="-13" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="14" y1="-2" x2="18" y2="-2" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="-14" y1="-2" x2="-18" y2="-2" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="10" y1="6" x2="13" y2="9" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="-10" y1="6" x2="-13" y2="9" stroke="url(#sunGrad)" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <!-- Sun circle -->
+      <circle cx="0" cy="-2" r="10" fill="url(#sunGrad)"/>
+      <circle cx="0" cy="-2" r="7" fill="#FFD54F" opacity="0.6"/>
+    </g>
+
+    <!-- Ground line -->
+    <line x1="-5" y1="85" x2="55" y2="85" stroke="#66BB6A" stroke-width="2.5"/>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(80, 20)">
+    <text x="0" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="800" fill="#1B5E20">HIMANSHU</text>
+    <text x="0" y="52" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#1565C0">SOLAR ENERGY</text>
+    <text x="0" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#666">Powering a Greener Tomorrow</text>
+    <!-- decorative line -->
+    <line x1="0" y1="80" x2="140" y2="80" stroke="#FFB300" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="84" x2="100" y2="84" stroke="#FFB300" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>

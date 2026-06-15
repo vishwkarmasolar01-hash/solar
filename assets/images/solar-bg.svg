@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="40%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD54F" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFD54F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#42A5F5" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#42A5F5" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="1200" cy="200" r="300" fill="url(#sunGlow)"/>
+  <circle cx="1200" cy="200" r="60" fill="#FFD54F" opacity="0.9"/>
+  <circle cx="1200" cy="200" r="50" fill="#FFF8E1" opacity="0.5"/>
+
+  <!-- Sun rays -->
+  <g transform="translate(1200, 200)" opacity="0.15" stroke="#FFD54F" stroke-width="2">
+    <line x1="0" y1="-80" x2="0" y2="-140"/>
+    <line x1="56" y1="-56" x2="99" y2="-99"/>
+    <line x1="80" y1="0" x2="140" y2="0"/>
+    <line x1="56" y1="56" x2="99" y2="99"/>
+    <line x1="0" y1="80" x2="0" y2="140"/>
+    <line x1="-56" y1="56" x2="-99" y2="99"/>
+    <line x1="-80" y1="0" x2="-140" y2="0"/>
+    <line x1="-56" y1="-56" x2="-99" y2="-99"/>
+  </g>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.06">
+    <ellipse cx="300" cy="180" rx="120" ry="40"/>
+    <ellipse cx="380" cy="170" rx="80" ry="35"/>
+    <ellipse cx="250" cy="190" rx="60" ry="25"/>
+
+    <ellipse cx="800" cy="250" rx="100" ry="35"/>
+    <ellipse cx="870" cy="240" rx="70" ry="30"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="650" width="1600" height="250" fill="#1B5E20" opacity="0.8"/>
+
+  <!-- Solar Panel Rows -->
+  <g transform="translate(100, 660)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    <g transform="translate(160, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    <g transform="translate(480, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    <g transform="translate(640, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+    <g transform="translate(800, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.5" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="url(#panelShine)"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(100, 760)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+    <g transform="translate(160, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+    <g transform="translate(320, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+    <g transform="translate(480, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+    <g transform="translate(640, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+    <g transform="translate(800, 0)">
+      <rect x="0" y="0" width="140" height="90" rx="4" fill="#1565C0" opacity="0.45" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.25"/>
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="44" x2="140" y2="44" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="0" y1="66" x2="140" y2="66" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="46" y1="0" x2="46" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+      <line x1="92" y1="0" x2="92" y2="90" stroke="#64B5F6" stroke-width="0.5" opacity="0.25"/>
+    </g>
+  </g>
+</svg>
