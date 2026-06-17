@@ -25,25 +25,19 @@
 
 ---
 
-![Solar Energy Banner](assets/images/solar-bg.svg)
-
----
-
 ## About
 
 **Himanshu Solar Energy** is a professional solar energy company based in **Panipat, Haryana** (near Pehalwan Chowk). We specialize in designing, installing, and maintaining high-quality solar power plants and energy systems for residential, commercial, and industrial clients.
 
 This repository contains the company's official marketing website — a responsive, single-page application built with vanilla HTML, CSS, and JavaScript.
 
+![Hero Section](assets/images/background.jpg)
+
 > **[View Live Site &rarr;](https://vishwkarmasolar01-hash.github.io/solar/)**
 
 ---
 
 ## Tech Stack
-
-<p align="center">
-  <img src="assets/logo.svg" alt="Himanshu Solar Energy Logo" width="300">
-</p>
 
 | Technology | Purpose |
 |---|---|
@@ -86,9 +80,6 @@ This repository contains the company's official marketing website — a responsi
 | 8 | **Contact** | Info details & AJAX contact form |
 | 9 | **Footer** | Links, contact info, copyright |
 
-![Section Preview](assets/images/solar-bg.svg#gh-light-mode-only)
-![Section Preview](assets/images/solar-bg.svg#gh-dark-mode-only)
-
 ---
 
 ## Getting Started
@@ -114,10 +105,6 @@ start index.html
 
 No build tools or bundlers required — this is a pure static site.
 
-<p align="center">
-  <img src="assets/images/solar-bg.svg" alt="Website preview illustration" width="80%" style="border-radius: 12px;">
-</p>
-
 ---
 
 ## Deployment
@@ -137,12 +124,6 @@ To set up your own:
 2. Or connect your GitHub repo — set build command to empty and publish directory to `/`
 
 ---
-
-<p align="center">
-  <img src="assets/logo.svg" alt="logo" width="60">
-  <br>
-  <sub>Fully responsive — works on all devices</sub>
-</p>
 
 ---
 
