@@ -47,14 +47,18 @@ function scrollToTarget(target) {
   const targetPos = target.getBoundingClientRect().top + window.scrollY - headerH;
   const start = window.scrollY;
   const dist = targetPos - start;
-  const dur = 800;
+  const dur = 1000;
   let startTime = null;
-  function ease(t) { return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1; }
+  function ease(t) {
+    return t < 0.5
+      ? 16 * t * t * t * t * t
+      : 1 - Math.pow(-2 * t + 2, 5) / 2;
+  }
   function animate(curTime) {
     if (!startTime) startTime = curTime;
     const elapsed = curTime - startTime;
     const prog = Math.min(elapsed / dur, 1);
-    window.scrollTo(0, start + dist * ease(prog));
+    window.scrollTo(0, Math.round(start + dist * ease(prog)));
     if (prog < 1) requestAnimationFrame(animate);
   }
   requestAnimationFrame(animate);
