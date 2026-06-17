@@ -343,15 +343,6 @@ input:focus-visible, textarea:focus-visible {
   pointer-events: none;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 120px;
-  background: linear-gradient(to top, #fff, transparent);
-  pointer-events: none;
-}
-
 .hero-content {
   display: flex;
   justify-content: center;
