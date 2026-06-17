@@ -891,6 +891,15 @@ textarea:focus-visible {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contact p a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+}
+
+.footer-contact p a:hover {
+  color: #FFB300;
+}
+
 .footer-contact p i {
   width: 20px;
   color: #FFB300;
