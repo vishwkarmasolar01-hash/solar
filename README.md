@@ -183,8 +183,8 @@ The site uses a blue + green palette with gold accents. Key CSS variables and gr
 
 ### Fonts
 Two Google Fonts are used:
-- **Inter** — headings & body (sans-serif)
-- **Merriweather** — (reserved for future use, loaded but not currently styled)
+- **Playfair Display** — headings (serif, elegant)
+- **Inter** — body & navigation (sans-serif, clean)
 
 ---
 

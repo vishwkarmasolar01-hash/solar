@@ -12,11 +12,16 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
   background: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
 }
 
 /* Font smoothing for better legibility */
@@ -148,19 +153,20 @@ img {
   font-size: clamp(36px, 6vw, 56px);
   font-weight: 800;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 0;
   animation: textReveal 0.8s ease 0.3s forwards;
 }
 
 .splash-title .st-2 {
   font-size: clamp(24px, 4vw, 38px);
-  font-weight: 700;
+  font-weight: 600;
+  font-style: italic;
   background: linear-gradient(135deg, #FFD54F, #FFB300);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   opacity: 0;
   animation: textReveal 0.8s ease 0.7s forwards;
 }
@@ -173,8 +179,9 @@ img {
 .splash-tagline {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   text-transform: uppercase;
+  font-weight: 500;
   opacity: 0;
   animation: textReveal 0.8s ease 1.1s forwards;
 }
@@ -214,6 +221,7 @@ img {
   color: #1B5E20;
   margin-bottom: 16px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .section-desc {
@@ -314,11 +322,13 @@ textarea:focus-visible {
 
 .nav-link {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: #444;
   transition: color 0.3s;
   position: relative;
   padding-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .nav-link::after {
@@ -516,6 +526,7 @@ textarea:focus-visible {
   font-size: 26px;
   color: #1B5E20;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .about-text p {
@@ -622,6 +633,7 @@ textarea:focus-visible {
   font-size: 20px;
   color: #1B5E20;
   margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .service-card p {
@@ -674,6 +686,7 @@ textarea:focus-visible {
   font-size: 19px;
   color: #1B5E20;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .why-card p {
@@ -713,6 +726,7 @@ textarea:focus-visible {
   font-size: clamp(26px, 3.5vw, 40px);
   color: #fff;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .cta-inner p {
