@@ -15,6 +15,12 @@
     </a>
     <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
   </p>
+
+  <p>
+    <a href="https://vishwkarmasolar01-hash.github.io/solar/">
+      <img src="https://img.shields.io/badge/Live-Site-FF8F00?style=for-the-badge&logo=github-pages" alt="Live Site">
+    </a>
+  </p>
 </div>
 
 ---
@@ -24,6 +30,8 @@
 **Himanshu Solar Energy** is a professional solar energy company based in **Panipat, Haryana** (near Pehalwan Chowk). We specialize in designing, installing, and maintaining high-quality solar power plants and energy systems for residential, commercial, and industrial clients.
 
 This repository contains the company's official marketing website — a responsive, single-page application built with vanilla HTML, CSS, and JavaScript.
+
+> **[View Live Site &rarr;](https://vishwkarmasolar01-hash.github.io/solar/)**
 
 ---
 
@@ -99,10 +107,14 @@ No build tools or bundlers required — this is a pure static site.
 ## Deployment
 
 ### GitHub Pages
+The site is already deployed at:
+> **[https://vishwkarmasolar01-hash.github.io/solar/](https://vishwkarmasolar01-hash.github.io/solar/)**
+
+To set up your own:
 1. Go to repo **Settings** → **Pages**
 2. Source: **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`
-4. Save — your site will be live at `https://vishwkarmasolar01-hash.github.io/solar/`
+4. Save
 
 ### Netlify (Recommended)
 1. Drag & drop the entire folder onto [Netlify Drop](https://app.netlify.com/drop)
@@ -189,4 +201,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
   <sub>Built with ❤️ for a greener planet</sub>
+  <br>
+  <a href="https://vishwkarmasolar01-hash.github.io/solar/">Visit Live Site</a>
 </div>
