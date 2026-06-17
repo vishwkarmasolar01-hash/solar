@@ -25,6 +25,10 @@
 
 ---
 
+![Solar Energy Banner](assets/images/solar-bg.svg)
+
+---
+
 ## About
 
 **Himanshu Solar Energy** is a professional solar energy company based in **Panipat, Haryana** (near Pehalwan Chowk). We specialize in designing, installing, and maintaining high-quality solar power plants and energy systems for residential, commercial, and industrial clients.
@@ -36,6 +40,10 @@ This repository contains the company's official marketing website — a responsi
 ---
 
 ## Tech Stack
+
+<p align="center">
+  <img src="assets/logo.svg" alt="Himanshu Solar Energy Logo" width="300">
+</p>
 
 | Technology | Purpose |
 |---|---|
@@ -66,16 +74,20 @@ This repository contains the company's official marketing website — a responsi
 
 ## Sections
 
-1. **Splash** — Branded intro animation
-2. **Header** — Fixed navigation with active link tracking
-3. **Hero** — Call-to-action with visual
-4. **About** — Company info & stats (projects, clients, experience)
-5. **Services** — 6 service cards with hover effects
-6. **Why Us** — 4 reasons to choose with numbered cards
-7. **CTA Banner** — Call-to-action strip
-8. **Contact** — Info details & contact form
-9. **Footer** — Links, contact info, copyright
-10. **WhatsApp Float** — Persistent chat button
+| # | Section | Description |
+|---|---------|-------------|
+| 1 | **Splash** | Branded intro animation with logo and tagline |
+| 2 | **Header** | Fixed navigation with active link tracking |
+| 3 | **Hero** | Bold call-to-action with gradient background & visual |
+| 4 | **About** | Company info, founder details & stats counter |
+| 5 | **Services** | 6 service cards with hover effects |
+| 6 | **Why Us** | 4 reasons to choose with numbered cards |
+| 7 | **CTA Banner** | Call-to-action strip with gradient |
+| 8 | **Contact** | Info details & AJAX contact form |
+| 9 | **Footer** | Links, contact info, copyright |
+
+![Section Preview](assets/images/solar-bg.svg#gh-light-mode-only)
+![Section Preview](assets/images/solar-bg.svg#gh-dark-mode-only)
 
 ---
 
@@ -102,6 +114,10 @@ start index.html
 
 No build tools or bundlers required — this is a pure static site.
 
+<p align="center">
+  <img src="assets/images/solar-bg.svg" alt="Website preview illustration" width="80%" style="border-radius: 12px;">
+</p>
+
 ---
 
 ## Deployment
@@ -119,6 +135,14 @@ To set up your own:
 ### Netlify (Recommended)
 1. Drag & drop the entire folder onto [Netlify Drop](https://app.netlify.com/drop)
 2. Or connect your GitHub repo — set build command to empty and publish directory to `/`
+
+---
+
+<p align="center">
+  <img src="assets/logo.svg" alt="logo" width="60">
+  <br>
+  <sub>Fully responsive — works on all devices</sub>
+</p>
 
 ---
 
