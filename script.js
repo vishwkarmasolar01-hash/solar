@@ -36,29 +36,46 @@ if (hamburger && nav) {
 }
 
 // ========== SMOOTH SCROLL ==========
+function getHeaderHeight() {
+  const headerEl = document.getElementById('header');
+  return headerEl ? headerEl.offsetHeight : 0;
+}
+
+function scrollToTarget(target) {
+  if (!target) return;
+  const headerH = getHeaderHeight();
+  const targetPos = target.getBoundingClientRect().top + window.scrollY - headerH;
+  const start = window.scrollY;
+  const dist = targetPos - start;
+  const dur = 800;
+  let startTime = null;
+  function ease(t) { return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1; }
+  function animate(curTime) {
+    if (!startTime) startTime = curTime;
+    const elapsed = curTime - startTime;
+    const prog = Math.min(elapsed / dur, 1);
+    window.scrollTo(0, start + dist * ease(prog));
+    if (prog < 1) requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     const target = document.querySelector(anchor.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
-    const headerEl = document.getElementById('header');
-    const headerH = headerEl ? headerEl.offsetHeight : 0;
-    const targetPos = target.getBoundingClientRect().top + window.scrollY - headerH;
-    const start = window.scrollY;
-    const dist = targetPos - start;
-    const dur = 800;
-    let startTime = null;
-    function ease(t) { return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1; }
-    function animate(curTime) {
-      if (!startTime) startTime = curTime;
-      const elapsed = curTime - startTime;
-      const prog = Math.min(elapsed / dur, 1);
-      window.scrollTo(0, start + dist * ease(prog));
-      if (prog < 1) requestAnimationFrame(animate);
-    }
-    requestAnimationFrame(animate);
+    scrollToTarget(target);
   });
 });
+
+// Handle initial hash on page load (after splash)
+if (window.location.hash) {
+  const hashTarget = document.querySelector(window.location.hash);
+  if (hashTarget) {
+    setTimeout(() => scrollToTarget(hashTarget), 3400);
+  }
+}
 
 // ========== HEADER SCROLL EFFECT ==========
 const header = document.getElementById('header');
