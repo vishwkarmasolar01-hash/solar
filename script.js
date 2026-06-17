@@ -158,25 +158,69 @@ aboutObserver.observe(aboutSection);
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = contactForm.querySelector('button[type="submit"]');
+    const formMessage = document.getElementById('formMessage');
     const originalText = btn ? btn.textContent : 'Send Message';
+
     if (btn) {
-      btn.textContent = 'Message Sent!';
-      btn.style.background = 'linear-gradient(135deg, #2E7D32, #388E3C)';
-      btn.style.borderColor = '#2E7D32';
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      btn.setAttribute('aria-busy', 'true');
     }
 
-    setTimeout(() => {
-      if (btn) {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.style.borderColor = '';
-      }
-    }, 3000);
+    if (formMessage) {
+      formMessage.hidden = false;
+      formMessage.className = 'form-message';
+      formMessage.textContent = '';
+    }
 
-    contactForm.reset();
+    try {
+      const action = contactForm.getAttribute('action');
+      const formData = new FormData(contactForm);
+
+      if (action && action.includes('formspree.io')) {
+        // Submit to Formspree
+        const resp = await fetch(action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (!resp.ok) throw new Error('Submission failed');
+      } else if (action) {
+        // Generic POST
+        await fetch(action, { method: 'POST', body: formData });
+      } else {
+        // Fallback: mailto
+        const name = formData.get('name') || '';
+        const email = formData.get('email') || '';
+        const phone = formData.get('phone') || '';
+        const message = formData.get('message') || '';
+        const mailto = `mailto:?subject=${encodeURIComponent('Quote request')}&body=${encodeURIComponent(name + '\n' + phone + '\n' + email + '\n\n' + message)}`;
+        window.location.href = mailto;
+      }
+
+      if (formMessage) {
+        formMessage.classList.add('success');
+        formMessage.textContent = 'Thanks — your message was sent. We will get back to you within 1 business day.';
+      }
+
+      contactForm.reset();
+    } catch (err) {
+      if (formMessage) {
+        formMessage.classList.add('error');
+        formMessage.textContent = 'Sorry — something went wrong. Please try again or call us.';
+      }
+      console.error(err);
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        btn.removeAttribute('aria-busy');
+      }
+    }
   });
 }
 

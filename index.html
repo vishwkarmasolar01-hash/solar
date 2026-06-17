@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Himanshu Solar Energy — Panipat Solar Power Plants">
+  <meta property="og:description" content="Professional solar power plant design, installation and maintenance. Get a free site survey and quote.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -66,13 +72,20 @@
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <div class="hero-text">
-        <p class="hero-tagline">Welcome to</p>
-        <h1>Himanshu Solar Energy</h1>
-        <p class="hero-subtitle">Your trusted partner for solar power plants &amp; solar energy solutions in Panipat</p>
+        <p class="hero-tagline">Trusted Solar Experts</p>
+        <h1>Reliable Solar Installations for Homes &amp; Businesses</h1>
+        <p class="hero-subtitle">Reduce energy bills and increase resilience with turnkey solar systems — free site survey and customised quote.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-          <a href="#services" class="btn btn-outline">Our Services</a>
+          <a href="#contact" class="btn btn-primary">Get Your Free Quote</a>
+          <a href="#services" class="btn btn-outline">See Our Services</a>
         </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <picture>
+          <source srcset="assets/images/hero.webp" type="image/webp">
+          <img src="assets/images/hero.jpg" alt="Solar panels on rooftop at sunrise" class="hero-image">
+        </picture>
       </div>
     </div>
   </section>
@@ -253,7 +266,7 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm" aria-label="Contact form">
+        <form class="contact-form" id="contactForm" aria-label="Contact form" action="https://formspree.io/f/your-form-id" method="POST">
           <div class="form-group">
             <input type="text" name="name" aria-label="Your name" placeholder="Your Name" required>
           </div>
@@ -266,6 +279,9 @@
           <div class="form-group">
             <textarea name="message" aria-label="Your message" placeholder="Your Message" rows="5" required></textarea>
           </div>
+          <input type="hidden" name="_subject" value="New quote request from website">
+          <input type="hidden" name="_format" value="plain">
+          <div class="form-message" id="formMessage" role="status" aria-live="polite" hidden></div>
           <button type="submit" class="btn btn-primary btn-block">Send Message</button>
         </form>
       </div>
